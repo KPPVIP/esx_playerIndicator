@@ -1,0 +1,737 @@
+
+@font-face {
+    font-family: "LogoFont";
+    src: url(https://cdn.discordapp.com/attachments/941780399883960360/943569002322599956/Montebello-Bold.otf);
+}
+
+@font-face {
+    font-family: "ClauFont";
+    src: url(https://cdn.discordapp.com/attachments/933891151885381682/937106567508152350/Akrobat-Bold.otf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: .03vw;
+    
+    /* background: #464646; */
+}
+
+.logoposition {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+}
+
+.HUDUP {
+    position: absolute;
+    display: inline-flex;
+    max-width: auto;
+    width: auto;
+    left: 38%;
+    margin-top: 1vw;
+
+}
+
+.HUDUP2 {
+    position: absolute;
+    display: inline-flex;
+    max-width: auto;
+    width: auto;
+    left: 38%;
+    margin-top: 3vw;
+
+}
+
+.statusHUD {
+    position: absolute;
+    display: inline-flex;
+    max-width: auto;
+    width: auto;
+    left: 34%;
+    top: 92%;
+    margin-bottom: 1vw;
+}
+
+.datap span {
+    font-family: "ClauFont";
+    font-size: .9vw;
+    text-shadow: 0px 1px 1px rgba(150, 150, 150, 0.637);
+}
+  
+.datap i {
+    font-size: .9vw;
+    /* color: white; */
+}
+  
+.datap {
+    padding: .2vw;
+}
+
+[class="playerJOB"] {
+    position: relative;
+    font-size: 1vw;
+    padding: .3vw;
+    border-radius: .4vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+    background: linear-gradient(30deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.671) 100%);
+ 
+}
+
+.playerJOB span {
+
+    font-family: "ClauFont";
+    color: white;
+    position: relative;
+    min-width: auto;
+    max-width: auto;
+    height: 1.6vw;
+    width: auto;
+    text-align: left;
+
+}
+  
+.playerJOB i {
+    font-size: 1vw;
+    color: white;
+    position: relative;
+
+}
+
+[class="playerGang"] {
+    position: relative;
+    font-size: 1vw;
+    padding: .3vw;
+    border-radius: .4vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+    background: linear-gradient(30deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.671) 100%);
+ 
+}
+
+.playerGang span {
+
+    font-family: "ClauFont";
+    color: white;
+    position: relative;
+    min-width: auto;
+    max-width: auto;
+    height: 1.6vw;
+    width: auto;
+    text-align: left;
+
+}
+  
+.playerGang i {
+    font-size: 1vw;
+    color: white;
+    position: relative;
+
+}
+
+
+[class="zone"] {
+    position: relative;
+    display: none;
+    font-size: 1vw;
+    padding: .5vw;
+    background: rgb(0,0,0);
+    border-radius: .4vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+    background: linear-gradient(83deg, rgba(0,0,0,0) 0%, rgba(7,157,21,1) 100%);
+
+}
+
+.zone span {
+
+    font-family: "ClauFont"; 
+    color: white;
+    position: relative;
+    min-width: auto;
+    max-width: auto;
+    height: 1.6vw;
+    width: auto;
+    text-align: left;
+
+}
+  
+.zone i {
+    font-size: 1vw;
+    color: white;
+    position: relative;
+}
+
+[class="zoneX"] {
+    position: relative;
+    font-size: 1vw;
+    padding: .5vw;
+    background: rgb(0,0,0);
+    border-radius: .4vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+    background: linear-gradient(83deg, rgba(0,0,0,0) 0%, rgb(157, 7, 7) 100%);
+
+}
+
+.zoneX span {
+
+    font-family: "ClauFont";
+    color: white;
+    position: relative;
+    min-width: auto;
+    max-width: auto;
+    height: 1.6vw;
+    width: auto;
+    text-align: left;
+    
+  
+}
+  
+.zoneX i {
+    font-size: 1vw;
+    color: white;
+    position: relative;
+}
+
+/* AMMON */
+
+[class="ammo"] {
+    position: relative;
+    font-size: 1vw;
+        
+}   
+
+.ammo h1 {
+
+    font-family: "ClauFont";
+    font-size: 1vw;
+    color: white;
+    position: relative;
+    bottom: .7vw;
+    text-align: left;
+    display: inline-flex;
+    background: rgb(0,0,0);
+    border-radius: .4vw;
+    padding: .58vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+    background: linear-gradient(30deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.671) 100%);
+
+}
+
+
+.microposition {
+    position: absolute;
+    right: 2vw;
+    bottom: 2vw;
+}
+
+/* MAP RADAR */
+
+.mapa {
+    position: absolute;
+    bottom: 1.1vw;
+    left: 2.1vw;
+}
+
+.mapborde {
+    position: relative;
+    width: 12.8vw;
+    height: 12.8vw;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: .4vw solid #00ADFA;
+    top: 15vw;
+    left: 1.5vw;
+  
+}
+
+.mapa img {
+    position: relative;
+    width: 16.5vw;
+    height: 16.5vw;
+    transition: 1s;
+    image-resolution: 300dpi;
+}
+
+.calleposition {
+    position: absolute;
+    bottom: 2vw;
+    left: 15vw;
+
+}
+
+.calle img {
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    top: 3vw;
+    left: 2.5vw;
+}
+
+.calle h1 {
+   position: relative;
+   bottom: 0vw;
+   left: 4.8vw;
+   font-family: ClauFont;
+   font-size: 1vw;
+   color: white;
+}
+
+.calle h2 {
+   position: relative;
+   bottom: .5vw;
+   left: 4.8vw;
+   font-family: ClauFont;
+   font-size: .8vw;
+   color: rgba(255, 255, 255, 0.644);
+}
+
+.ldBar path.mainline {
+    stroke-width: 8;
+    stroke: #D470FF;
+    stroke-linecap: round;
+    
+}
+
+.ldBar path.baseline {
+    stroke-width: 5;
+    stroke: #767991;
+    stroke-linecap: round;
+}
+
+#co2 path.mainline {
+    stroke: #D470FF;
+}
+
+[class="co2p"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="ico2"] {
+    width: 1.5vw;
+    height: 1.5vw; 
+    position: absolute;
+    bottom: .4vw;
+    left: .4vw;
+}
+
+#vida path.mainline {
+    stroke: #E5647B;
+}
+
+[class="vidap"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="ivida"] {
+    width: 1.3vw;
+    height: 1.3vw; 
+    position: absolute;
+    bottom: .5vw;
+    left: .5vw;
+}
+
+#comida path.mainline {
+    stroke: #E4B242;
+}
+
+[class="comidap"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+  
+[class="icomida"] {
+    width: 1.3vw;
+    height: 1.3vw; 
+    position: absolute;
+    bottom: .5vw;
+    left: .5vw;
+}
+
+#agua path.mainline {
+    stroke: #00ADFA;
+}
+
+[class="aguap"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="iagua"] {
+    width: 1.3vw;
+    height: 1.3vw; 
+    position: absolute;
+    bottom: .5vw;
+    left: .5vw;
+}
+
+#stamina path.mainline {
+    stroke: #E2E86F;
+}
+
+[class="staminap"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="istamina"] {
+    width: 1.3vw;
+    height: 1.3vw; 
+    position: absolute;
+    bottom: .5vw;
+    left: .5vw;
+}
+
+#stress path.mainline {
+    stroke: #520000;
+}
+
+[class="stressp"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="istress"] {
+    width: 1.3vw;
+    height: 1.3vw; 
+    position: absolute;
+    bottom: .5vw;
+    left: .5vw;
+}
+
+#chaleco path.mainline {
+    stroke: #4168FF;
+}
+
+[class="chalecop"] {
+    position: absolute;
+    bottom: 0vw;
+    left: 2.3vw;
+    font-family: "ClauFont";
+    font-size: .9vw;
+    color: white;
+    text-shadow: 0px .7px 1px rgba(0, 0, 0, 0.699);
+}
+
+[class="ichaleco"] {
+    width: 1.1vw;
+    height: 1.1vw; 
+    position: absolute;
+    bottom: .6vw;
+    left: .6vw;
+}
+
+
+/* Carhud */
+
+
+.carposition {
+    color: white;
+    position: absolute;
+    top: 30vw;
+    left: 90vw;
+}
+
+#carhudjs path.mainline {
+    stroke: #00ADFA;
+    stroke-width: 6;
+}
+
+#carhudjs path.baseline {
+    stroke: #000000;
+    stroke-width: 5;
+}
+
+.velojs {
+    position: relative;
+    left: 0.6vw;
+    top: 12.19vw;
+    font-size: 3vw;
+    font-family: "ClauFont";
+    color: white;
+    text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+.carhud h2 {
+    position: relative;
+    top: 10vw;
+    left: 1.8vw;
+    font-size: .8vw;
+    font-family: "ClauFont";
+    color: rgb(168, 164, 164);
+}
+
+[class="igaso"] {
+    position: relative;
+    width: 1vw;
+    height: 1vw;
+    top: 12.1vw;
+    left: 2.1vw;
+}
+
+.carhud h3 {
+    position: relative;
+    top: 10vw;
+    left: 3.2vw;
+    font-size: .8vw;
+    font-family: "ClauFont";
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+
+[class="cinto"] {
+    width: 1.1vw;
+    height: 1.1vw;
+    position: relative;
+    right: 1.3vw;
+    bottom: 2.3vw;
+}
+
+[class="motor"] {
+    width: 1.1vw;
+    height: 1.1vw;
+    position: relative;
+    right: 2.8vw;
+    bottom: 2.2vw;
+}
+
+[id="vidamotor"] {
+    width: 1.2vw;
+    height: 1.2vw;
+    position: relative;
+    right: 0vw;
+    bottom: 2.5vw;
+    font-size: .8vw;
+    color: white;
+}
+
+[class="motorjs"] {
+    font-size: .6vw;
+    font-family: "ClauFont";
+    margin-left: .2vw;
+}
+
+.notifyposition {
+    position: absolute;
+    max-width: auto;
+    width: auto;
+    left: 83%;
+    top: 0vw;
+    margin-top: 1vw;
+}
+
+.notify { /* Here you can change the position. */
+    position: relative;
+    left: 0vw;
+    top: 15vw;
+    
+}
+  
+.notification h1{
+    font-size: 1vw;
+    color: #72fd85;
+    font-family: "ClauFont";
+    text-shadow: 0vw 0vw 0vw rgb(0, 0, 0);
+    position: relative;
+    text-align: center;
+    padding: .5vw .5vw 0vw .5vw;
+}
+
+    
+.notification p {
+    font-size: .8vw;
+    color: rgb(255, 255, 255);
+    font-family: "ClauFont";
+    padding: 0vw .5vw .5vw .5vw;
+    position: relative;
+    text-align: center;
+}
+  
+.notification {
+    position: relative;
+    max-width: 15vw;
+    max-height: 10vw;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.719) 100%);
+    border-right: .2vw solid #ffffff;
+    margin-top: .5vw;
+    border-radius: .4vw;
+}
+
+.keybinds {
+    position: absolute;
+    top: 22vw;
+    right: 2vw;
+    text-align: center;
+}
+
+.circulo {
+    border-radius: 1vw;
+    height: 1.5vw;
+    width: 1.5vw;
+    border: .2vw solid rgb(255, 255, 255);
+    margin: .5vw;
+    background-color: rgba(128, 128, 128, 0);
+    display: flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+}
+
+.circulo span {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: .8vw;
+    font-family: "ClauFont";
+}
+
+
+.textito {
+    position: absolute;
+    font-size: .4vw;
+    font-family: "ClauFont";
+    color: white;
+    right: 4.5vw;
+    top: 21.7vw;
+    text-align: right;
+}
+
+.textito h1 {
+    margin: 1.3vw .5vw 1.3vw .5vw;
+    position: relative;
+    color: white;
+    font-size: .9vw;
+    font-family: "ClauFont";
+}
+
+[class="OpcionPanel"] {
+    position: absolute;
+    width: 35vw;
+    height: 30vw;
+    left: 30vw;
+    top: 12vw;
+    background: rgba(0, 0, 0, 0.747);
+    border-radius: 2vw;
+    padding-left: 3vw;
+    padding-right: 1vw;
+    border-right: .2vw rgb(255, 255, 255) solid;
+
+}
+
+
+.bottonshowhide {
+    position: relative;
+    color: white;
+    font-size: 1vw;
+    height: 20vw;
+    width: 18vw;
+    top: 11vw;
+    padding: 1vw 1vw 1vw 0vw;
+}
+
+.bottonshowhide img {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: .4vw; 
+    padding: 0vw .4vw 0vw 0vw;
+}
+
+.bottonshowhide2 {
+    position: relative;
+    color: white;
+    font-size: 1vw;
+    height: 20vw;
+    width: 18vw;
+    bottom: 10.5vw;
+    left: 18vw;
+    padding: 1vw 1vw 1vw 0vw;
+}
+
+.bottonshowhide2 i {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    top: 0vw; 
+    padding: 0vw .3vw 0vw 0vw;
+}
+
+.OpcionPanel h1 {
+    position: absolute;
+    font-size: .9vw;
+    top: 1vw;
+    color: #ffffff;
+    font-family: "ClauFont";
+   
+}
+
+.colortitles {
+    position: relative;
+    color: white; 
+    font-family: "ClauFont";
+    font-size: 1vw;
+    top: 5vw;
+}
+
+.titlePanel {
+    position: relative;
+    color: white; 
+    font-family: "ClauFont";
+    font-size: 1vw;
+    top: 1vw;
+}
+
+.styled {
+    position: relative;
+    top: 5.5vw;
+    left: 0vw;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: .8vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "ClauFont";
+    text-shadow: 1px 1px 1px #000;
+    border-radius: .4vw;
+    transition: all 0.5s;
+    background-color: rgb(101, 142, 255);
+    }
+
+.styled:hover {background-color: #000000}
+
+.styled:active {
+  background-color: #000000;
+  box-shadow: 0 1px rgb(101, 142, 255);
+  transform: translateY(4px);
+}

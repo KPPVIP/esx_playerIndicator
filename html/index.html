@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>DiamondRP</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css"/>
+        <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="app.js"></script>
+        <script src="dist/loading-bar.js"></script>
+        <script type="text/javascript" src="dist/jquery.wheelcolorpicker.js"></script>
+        <link rel="stylesheet" href="dist/loading-bar.css">
+        <link rel="stylesheet" href="dist/Colorpicker.css">
+    </head>
+    
+    <body>
+
+        <div class="todoelhud" style="display: none;">
+
+            <div class="logoposition" id="logoposition">
+            <div class="logo" id="logo" style="position: relative; top: 0vw; left: 0vw;">
+                <div class="logoimg" id="logoimg"><img class="logoprueba" src="" style="position: relative; width: 6vw; height: 6vw;"/> </div>
+                <div class="logotext" id="logotext" style="color: rgb(255, 255, 255); position: relative; width: 6vw; height: 6vw; font-size: 1.2vw; text-align: center; font-family: LogoFont;">.. text ..</div>
+            </div>
+            </div>
+
+            <div class="HUDUP">
+                <div class="playersID" id="playersID" style=" color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pid">
+                    <i class="fas fa-user"><span class="pedID"> ID: 100</span></i>
+                    </div>
+                </div>
+
+                <div class="playersONLINE" id="playersONLINE" style="display: none; color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pconnect">
+                    <i class="fas fa-user-friends"><span class="pedONLINE" id="total-players"> 100/200</span></i> 
+                    </div>
+                </div>
+
+                <div class="playersCASH" id="playersCASH" style="color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pcash"> 
+                    <i class="fas fa-money-bill"><span class="pedcash"> $6500 </span></i>
+                    </div>
+                </div>
+
+                <div class="playersBANK" id="playersBANK" style="display: none; color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pbank"> 
+                    <i class="fas fa-wallet"><span class="pedbank"> $150000 </span></i>
+                    </div>
+                </div>
+
+                <div class="playersDUTY" id="playersDUTY" style="color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pduty"> 
+                    <i class="fas fa-sack-dollar"><span class="pedduty"> $50000 </span></i>
+                    </div>
+                </div>
+
+                <div class="CLOCK" id="CLOCK" style="display: none; color:white; position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="datap pclock"> 
+                    <i class="fas fa-clock"><span class="pedclock"> 12:20 </span></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="HUDUP2">
+                <div class="playerJOBMOVE" id="playerJOBMOVE" style="position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="playerJOB" id="playerJOB">
+                        <span class="job"> Bikar┃Bikar </span>
+                        <i class="fas fa-clipboard-user iconjob" ></i>
+                    </div>
+                </div>
+
+                <div class="playergangMOVE" id="playergangMOVE" style="position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="playerGang" id="playerGang">
+                        <span class="gang"> nogang┃nogang </span>
+                        <i class="fas fa-clipboard-user iconjob" ></i>
+                    </div>
+                </div>
+                
+                <div class="ZoneMove" id="ZoneMove" style="position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="zoneX" id="zoneX">
+                        <span>NCZ</span>
+                        <i class="fas fa-times-circle zonaicon"></i>
+                    </div>
+                    
+                    <div class="zone" id="zone">
+                        <span>NCZ</span>
+                        <i class="fas fa-shield-check zonaicon"></i>
+                    </div>
+                </div>
+
+                <div class="ammoMove" id="ammoMove" style="position: relative; width: auto; max-width: auto; margin-right: .5vw;">
+                    <div class="ammo" id="ammo" style="display: none;">
+                        <h1 class="ammojs"> Ammo <span style="color:#00abe4">10/10</span>
+                            <img src="https://cdn.discordapp.com/attachments/933891151885381682/937124404188545065/bullets.png" alt="" style="position: relative; height: 1vw; width: 1vw; ">
+                        </h1>
+                    </div>
+                </div>  
+
+            </div>
+
+            <div class="notifyposition">
+            <div class="notifyMOVE" id="notifyMOVE" style="position: relative; width: auto; max-width: auto;">
+                <div class="notify"  style="display: none;">
+   
+                </div>
+            </div>
+            </div>
+        
+
+            <div class="calleposition">
+            <div class="calle" id="calle" style="display: none;">
+                <img src="https://cdn.discordapp.com/attachments/933891151885381682/937137628564840448/Location3.png" alt="">
+                <h1 class="callejs">Los Santos</h1>
+                <h2>California</h2>
+            </div>
+            </div>
+
+            <div class="microposition">
+            <div class="micro" id="micro">
+                <img class="voicejs" src="https://cdn.discordapp.com/attachments/933891151885381682/937137627574992956/Micro1.png" alt="" style="width: 2vw; height: 2vw;">
+            </div>
+            </div>
+
+        <div class="statusHUD" id="statusHUD" style="display: none;">
+            <div id="co2" class="ldBar" data-preset="circle" data-value="10" style="display: none; color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="co2p">100%</h1>
+                <img class="ico2" src="https://cdn.discordapp.com/attachments/933891151885381682/937139491896979516/02.png" alt="">
+            </div>
+
+            <div id="vida" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="vidap">100%</h1>
+                <img class="ivida" src="https://cdn.discordapp.com/attachments/933891151885381682/937141823930007623/heart.png" alt="">
+            </div>
+
+            <div id="comida" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="comidap">100%</h1>
+                <img class="icomida" src="https://cdn.discordapp.com/attachments/933891151885381682/937142029115355136/burger.png" alt="">
+            </div>
+
+            <div id="agua" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="aguap">100%</h1>
+                <img class="iagua" src="https://cdn.discordapp.com/attachments/933891151885381682/937143089196318770/water1.png" alt="">
+            </div>
+
+            <div id="stamina" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="staminap">100%</h1>
+                <img class="istamina" src="https://cdn.discordapp.com/attachments/933891151885381682/937143374220259348/runer.png" alt="">
+            </div>
+
+            
+            <div id="stress" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="stressp">100%</h1>
+                <img class="istress" src="https://cdn.discordapp.com/attachments/941780399883960360/950038856944738314/streess.png" alt="">
+            </div>
+
+            <div id="chaleco" class="ldBar" data-preset="circle" data-value="10" style="color: transparent; position: relative; margin-right: 2.5vw; width: 2.3vw; height: 2.3vw; transform: translate(-90deg);">
+                <h1 class="chalecop">100%</h1>
+                <img class="ichaleco" src="https://cdn.discordapp.com/attachments/933891151885381682/937143989612707840/armor.png" alt="">
+            </div>
+        </div>
+
+        <div class="carposition">
+            <div class="carhud" id="carhud" style="display: none;">
+                <h1 class="velojs" id="velojs">500</h1>
+                <h2 class="kmh">KM/H</h2>
+                <h2 class="mph">MP/H</h2>
+                <img class="igaso" src="https://cdn.discordapp.com/attachments/933891151885381682/937152934863581225/gas.png" alt="">
+                <h3 class="gasojs">100%</h3>
+                <div id="carhudjs" data-preset="fan" class="ldBar" data-value="60" style="transform: scaleX(-1) rotate(-90deg) scaleY(1); position: relative; color: transparent; height: 8vw; width: 8vw; right: 0vw; bottom: 0vw"></div>
+                <img class="cinto" src="https://media.discordapp.net/attachments/933891151885381682/937154076368572456/belt.png" alt="">
+                <i id="vidamotor" class="fas fa-cogs"><span class="motorjs">100%</span></i>
+                <img class="motor" src="https://cdn.discordapp.com/attachments/933891151885381682/937152305889951804/engine.png" alt="">
+            </div>
+        </div>
+
+            <div class="keybindsall" id="keybindsall">
+                <div class="textito">
+                    <h1>Phone</h1>
+                    <h1>Inventory</h1>
+                    <h1>Chat</h1>
+                    <h1>Help</h1>
+                </div>
+                <div class="keybinds">
+                    <div class="circulo"><span>F1</span></div>
+                    <div class="circulo"><span>F2</span></div>
+                    <div class="circulo"><span>T</span></div>
+                    <div class="circulo"><span>F10</span></div>
+                </div>
+            </div>
+            
+            <!-- <div class="OpcionPanel" id="OpcionPanel" "> -->
+            <div class="OpcionPanel" id="OpcionPanel" style="display: none;">
+
+                <div class="titlePanel">
+                    <h1>Here you can turn off what you don't want to use, move what you want, and reset everything back to default.</h1>
+                </div>
+
+                <button class="bottonpanel styled" id="movehud" type="button"> MOVE HUD </button>
+                <!-- <button class="bottonpanel styled" id="resethud" type="button"> RESET HUD </button> -->
+                <button class="bottonpanel styled" id="microhud" type="button">Show┃Hide MICRO </button>
+                <button class="bottonpanel styled" id="jobhud" type="button"> Show┃Hide JOB </button>
+                <!-- <button class="bottonpanel styled" id="zonehud" type="button"> ZONE </button> -->
+
+                <div class="colortitles">
+                    <h1>Here you can choose the color of all the options!.. choose the category and then the color.</h2>
+                </div>
+
+                <div class="bottonshowhide" >
+                    <img class="ico2" src="https://cdn.discordapp.com/attachments/933891151885381682/937139491896979516/02.png" alt=""> <input id="switch1" type="checkbox" >Show ┃ Hide Oxigen Status
+                    <br>
+                    <img class="ivida" src="https://cdn.discordapp.com/attachments/933891151885381682/937141823930007623/heart.png" alt=""> <input id="switch2" type="checkbox" checked="true" >Show ┃ Hide Health Status
+                    <br>
+                    <img class="icomida" src="https://cdn.discordapp.com/attachments/933891151885381682/937142029115355136/burger.png" alt=""> <input id="switch3" type="checkbox" checked="true" >Show ┃ Hide Hunger Status
+                    <br>
+                    <img class="iagua" src="https://cdn.discordapp.com/attachments/933891151885381682/937143089196318770/water1.png" alt=""> <input id="switch4" type="checkbox" checked="true" >Show ┃ Hide Thirst Status
+                    <br>
+                    <img class="istamina" src="https://cdn.discordapp.com/attachments/933891151885381682/937143374220259348/runer.png" alt=""> <input id="switch5" type="checkbox" checked="true" >Show ┃ Hide Stamina Status
+                    <br>
+                    <img class="istress" src="https://cdn.discordapp.com/attachments/941780399883960360/950038856944738314/streess.png" alt=""> <input id="switch15" type="checkbox" checked="true" >Show ┃ Hide Stress Status
+                    <br>
+                    <img class="ichaleco" src="https://cdn.discordapp.com/attachments/933891151885381682/937143989612707840/armor.png" alt=""> <input id="switch6" type="checkbox" checked="true" >Show ┃ Hide Armor Status
+                </div>
+
+
+                <div class="bottonshowhide2" >
+                    <i class="fas fa-user"></i> <input id="switch7" type="checkbox" checked="true" >Show ┃ Hide Player ID
+                    <br>
+                    <i class="fas fa-user-friends"></i> <input id="switch8" type="checkbox"  >Show ┃ Hide Player Online
+                    <br>
+                    <i class="fas fa-money-bill"></i> <input id="switch9" type="checkbox" checked="true" >Show ┃ Hide Cash
+                    <br>
+                    <i class="fas fa-wallet"></i> <input id="switch10" type="checkbox"  >Show ┃ Hide Bank
+                    <br>
+                    <i class="fas fa-sack-dollar"></i> <input id="switch11" type="checkbox" checked="true" >Show ┃ Hide Duty Money
+                    <br>
+                    <i class="fas fa-clock"></i> <input id="switch12" type="checkbox"  >Show ┃ Hide Clock
+                </div>
+
+                <div class="ColorPicker" style="position: absolute; top: 10vw;">
+
+                    <input style="width: 9vw; height: 2vw" id="color-block" class="color-block " type="color"  data-wheelcolorpicker="" data-wcp-format="css" />
+
+                    <select id="selection" style="position: relative; border-radius: .4vw; width: 8.5vw; height: 2vw;background: rgb(255, 255, 255);border-style: none;color: rgb(139, 139, 139);text-align: center; bottom: .4vw;">
+                        <optgroup  label="CHANGE COLOR">
+                            <option class="options" value="playersID-option">Player ID</option>
+                            <option class="options" value="playersONLINE-option">Player Online</option>
+                            <option class="options" value="playersCASH-option">Money Cash</option>
+                            <option class="options" value="playersBANK-option">Money Bank</option>
+                            <option class="options" value="playersDUTY-option">Money Black</option>
+                            <option class="options" value="CLOCK-option">Clock</option>
+                            <option class="options" value="logotext-option">Name Server</option>
+                            <option class="options" value="playerJOB-option">Player Job</option>
+                            <option class="options" value="playergang-option">Player Gang</option>
+                            <option class="options" value="notification-option">Notify</option>
+                            <option class="options" value="co2-option">Oxygen</option>
+                            <option class="options" value="vida-option">Heart</option>
+                            <option class="options" value="agua-option">Water</option>
+                            <option class="options" value="comida-option">Hunger</option>
+                            <option class="options" value="stamina-option">Stamina</option>
+                            <option class="options" value="stress-option">Stress</option>
+                            <option class="options" value="chaleco-option">Armor</option>
+                            <option class="options" value="carhudjs-option">Car Gasoline</option>
+                            <option class="options" value="mapborde-option">Map Radar</option>
+                        </optgroup>
+                    </select>
+                    
+                    <button class="btn btn-danger btn-sm d-flex" id="reset-color" type="button" style="position: relative; background-color: rgb(101, 142, 255);border-radius: .4vw; bottom: .3vw;  height: 2vw; width: 8vw;font-size: .8vw;color: rgb(255, 255, 255); font-family: ClauFont;">RESET COLOR</button>
+                    <button class="btn btn-danger btn-sm d-flex" id="reset-position" type="button" style="position: relative; background-color: rgb(101, 142, 255);border-radius: .4vw; bottom: .3vw;  height: 2vw; width: 8vw;font-size: .8vw;color: rgb(255, 255, 255); font-family: ClauFont;">RESET POSITION</button>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </body>
+
+</html>
